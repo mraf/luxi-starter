@@ -1,4 +1,4 @@
-import { makeStyles, alpha, darken } from '@material-ui/core/styles';
+import { makeStyles, alpha, darken } from '@mui/styles';
 
 const contactStyles = makeStyles(theme => ({
   title: {},

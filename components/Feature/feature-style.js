@@ -1,4 +1,4 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
 
 const decoration = theme => ({
   background: theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light,

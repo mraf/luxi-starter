@@ -1,4 +1,4 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
 import flag from '~/public/images/flag-logo.png';
 
 const flagIcon = {

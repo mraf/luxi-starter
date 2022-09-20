@@ -1,23 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import CssBaseline from '@mui/material/CssBaseline';
 import clsx from 'clsx';
 import Head from 'next/head';
-import Hidden from '@material-ui/core/Hidden';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
+import Hidden from '@mui/material/Hidden';
+import { makeStyles } from '@mui/styles';
+import Container from '@mui/material/Container';
 import { getStaticPaths, makeStaticProps } from '../../lib/getStatic';
-import Header from '../../../components/Header';
-import AnimateSlider from '../../../components/AnimateSlider';
-import Feature from '../../../components/Feature';
-import Counter from '../../../components/Counter';
-import Testimonials from '../../../components/Testimonials';
-import Pricing from '../../../components/Pricing';
-import Blog from '../../../components/Blog';
-import Subscribe from '../../../components/Subscribe';
-import Footer from '../../../components/Footer';
-import PageNav from '../../../components/PageNav';
-import Notification from '../../../components/Notification';
+import Header from '../../components/Header';
+import AnimateSlider from '../../components/AnimateSlider';
+import Feature from '../../components/Feature';
+import Counter from '../../components/Counter';
+import Testimonials from '../../components/Testimonials';
+import Pricing from '../../components/Pricing';
+import Blog from '../../components/Blog';
+import Subscribe from '../../components/Subscribe';
+import Footer from '../../components/Footer';
+// import PageNav from '../../components/PageNav';
+import Notification from '../../components/Notification';
 import brand from '../../public/text/brand';
 
 const sectionMargin = margin => (margin * 15);
@@ -84,7 +84,7 @@ function Landing(props) {
           </section>
         </main>
         <Hidden mdDown>
-          <PageNav />
+          {/* <PageNav /> */}
         </Hidden>
         <Footer toggleDir={onToggleDir} />
         <Hidden mdDown>

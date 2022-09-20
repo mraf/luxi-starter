@@ -1,13 +1,13 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import AppBar from '@material-ui/core/AppBar';
+import AppBar from '@mui/material/AppBar';
 import clsx from 'clsx';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import Container from '@material-ui/core/Container';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { useTheme } from '@material-ui/core/styles';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import Container from '@mui/material/Container';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/styles';
+// import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 import Settings from './Settings';
 import MobileMenu from './MobileMenu';
@@ -25,9 +25,9 @@ function createData(name, url) {
   };
 }
 
-const LinkBtn = React.forwardRef(function LinkBtn(props, ref) { // eslint-disable-line
-  return <AnchorLink to={props.to} {...props} innerRef={ref} />; // eslint-disable-line
-});
+// const LinkBtn = React.forwardRef(function LinkBtn(props, ref) { // eslint-disable-line
+//   return <AnchorLink to={props.to} {...props} innerRef={ref} />; // eslint-disable-line
+// });
 
 function Header(props) {
   const [fixed, setFixed] = useState(false);
@@ -86,9 +86,9 @@ function Header(props) {
                 </IconButton>
               )}
               <div className={classes.logo}>
-                <AnchorLink href="#home">
+                {/* <AnchorLink href="#home">
                   <img src={logo} alt="logo" />
-                </AnchorLink>
+                </AnchorLink> */}
               </div>
               {isDesktop && (
                 <Scrollspy
@@ -97,7 +97,7 @@ function Header(props) {
                 >
                   { menuList.map(item => (
                     <li key={item.id.toString()}>
-                      <Button component={AnchorLink} href={item.url}>{item.name}</Button>
+                      {/* <Button component={AnchorLink} href={item.url}>{item.name}</Button> */}
                     </li>
                   )) }
                   <li>

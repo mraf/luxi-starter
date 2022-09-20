@@ -1,6 +1,6 @@
 import React from 'react';
 import Document, { Html, Main, NextScript } from 'next/document';
-import { ServerStyleSheets } from '@material-ui/styles';
+import { ServerStyleSheets } from '@mui/styles';
 import HeadComponent from '../components/head';
 import i18nextConfig from '../next-i18next.config';
 

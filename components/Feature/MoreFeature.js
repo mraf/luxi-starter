@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 import ScrollAnimation from 'react-scroll-animation-wrapper';
 import useStyles from './feature-style';
 import { useTextAlign } from '~/theme/common';

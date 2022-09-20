@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
-import { useTheme } from '@material-ui/core/styles';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import LangIcon from '@material-ui/icons/Language';
-import InputAdornment from '@material-ui/core/InputAdornment';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import Typography from '@material-ui/core/Typography';
-import Select from '@material-ui/core/Select';
-import OutlinedInput from '@material-ui/core/OutlinedInput';
-import MenuItem from '@material-ui/core/MenuItem';
-import IconButton from '@material-ui/core/IconButton';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import { useTheme } from '@mui/styles';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import LangIcon from '@mui/icons-material/Language';
+import InputAdornment from '@mui/material/InputAdornment';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import Typography from '@mui/material/Typography';
+import Select from '@mui/material/Select';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import MenuItem from '@mui/material/MenuItem';
+import IconButton from '@mui/material/IconButton';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import logo from '~/public/images/logo.svg';
@@ -138,13 +138,13 @@ function Footer(props) {
                   </div>
                 )}
                 {isMobile && (
-                  <ExpansionPanel
+                  <Accordion
                     square
                     classes={{
                       root: classes.accordionRoot,
                     }}
                   >
-                    <ExpansionPanelSummary
+                    <AccordionSummary
                       expandIcon={<ExpandMoreIcon className={classes.accordionIcon} />}
                       aria-controls="panel1a-content"
                       id="panel1a-header"
@@ -155,8 +155,8 @@ function Footer(props) {
                       <strong>
                         {footer.title}
                       </strong>
-                    </ExpansionPanelSummary>
-                    <ExpansionPanelDetails>
+                    </AccordionSummary>
+                    <AccordionDetails>
                       <ul>
                         {footer.description.map((item, index) => (
                           <li key={item}>
@@ -166,8 +166,8 @@ function Footer(props) {
                           </li>
                         ))}
                       </ul>
-                    </ExpansionPanelDetails>
-                  </ExpansionPanel>
+                    </AccordionDetails>
+                  </Accordion>
                 )}
               </Grid>
             ))}
@@ -200,7 +200,7 @@ function Footer(props) {
               </InputAdornment>
             )}
             className={classes.selectLang}
-            input={<OutlinedInput labelWidth={200} name="lang" id="outlined-lang-simple" />}
+            input={<OutlinedInput labelwidth={200} name="lang" id="outlined-lang-simple" />}
           >
             {i18nextConfig.i18n.locales.map((locale) => (
               <MenuItem key={locale} value={locale}>{t(locale)}</MenuItem>

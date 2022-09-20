@@ -1,5 +1,5 @@
-const { i18n } = require('./next-i18next.config')
 const withImages = require('next-images');
+const { i18n } = require('./next-i18next.config')
 // const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = withImages({

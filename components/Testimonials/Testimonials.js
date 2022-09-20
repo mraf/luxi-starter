@@ -1,8 +1,8 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
+import Typography from '@mui/material/Typography';
+import Avatar from '@mui/material/Avatar';
 import Carousel from 'react-slick';
-import Paper from '@material-ui/core/Paper';
+import Paper from '@mui/material/Paper';
 import useStyle from './testi-style';
 import { useTextAlign } from '~/theme/common';
 import imgAPI from '~/public/images/imgAPI';

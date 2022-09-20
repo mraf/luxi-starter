@@ -4,14 +4,14 @@ import App from 'next/app';
 import PropTypes from 'prop-types';
 import {
   ThemeProvider,
-  createTheme,
   StylesProvider,
   jssPreset
-} from '@material-ui/core/styles';
+} from '@mui/styles';
+import { createTheme } from '@mui/material';
 import { create } from 'jss';
 import { PageTransition } from 'next-page-transitions';
 import rtl from 'jss-rtl';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import CssBaseline from '@mui/material/CssBaseline';
 import LoadingBar from 'react-top-loading-bar';
 import { appWithTranslation } from 'next-i18next';
 import lngDetector from '../lib/languageDetector';

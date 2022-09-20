@@ -1,8 +1,8 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import Button from '@mui/material/Button';
 import Slider from 'react-animated-slider';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 import { useTranslation } from 'next-i18next';
 import useStyles from './slider-style';
 import imgAPI from '~/public/images/imgAPI';

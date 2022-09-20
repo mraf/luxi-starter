@@ -1,9 +1,9 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import BackupIcon from '@material-ui/icons/Backup';
-import ExploreIcon from '@material-ui/icons/Explore';
-import MusicIcon from '@material-ui/icons/LibraryMusic';
-import Grid from '@material-ui/core/Grid';
+import Typography from '@mui/material/Typography';
+import BackupIcon from '@mui/icons-material/Backup';
+import ExploreIcon from '@mui/icons-material/Explore';
+import MusicIcon from '@mui/icons-material/LibraryMusic';
+import Grid from '@mui/material/Grid';
 import useStyles from './feature-style';
 
 function MainFeature() {

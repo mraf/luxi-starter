@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
+import Container from '@mui/material/Container';
 import MainFeature from './MainFeature';
 import MoreFeature from './MoreFeature';
 import Parallax from './Parallax';
